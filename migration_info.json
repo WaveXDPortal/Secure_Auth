@@ -1,0 +1,57 @@
+{
+  "migrationTaskDetailsList" : [ {
+    "onReleaseVersion" : "11.10",
+    "migrationVersion" : 1110.01,
+    "migrationMessages" : [ ]
+  }, {
+    "onReleaseVersion" : "11.10",
+    "migrationVersion" : 1110.02,
+    "migrationMessages" : [ {
+      "msg" : "Updated optimizeUIBuild default value to false in build.xml file",
+      "args" : [ ]
+    } ]
+  }, {
+    "onReleaseVersion" : "11.10",
+    "migrationVersion" : 1110.03,
+    "migrationMessages" : [ ]
+  }, {
+    "onReleaseVersion" : "11.10",
+    "migrationVersion" : 1110.04,
+    "migrationMessages" : [ ]
+  }, {
+    "onReleaseVersion" : "11.10",
+    "migrationVersion" : 1110.05,
+    "migrationMessages" : [ {
+      "msg" : "Updated ui-build.js file with fixes supporting concurrent builds",
+      "args" : [ ]
+    } ]
+  }, {
+    "onReleaseVersion" : "11.11",
+    "migrationVersion" : 1111.01,
+    "migrationMessages" : [ ]
+  }, {
+    "onReleaseVersion" : "11.11",
+    "migrationVersion" : 1111.02,
+    "migrationMessages" : [ ]
+  }, {
+    "onReleaseVersion" : "11.11",
+    "migrationVersion" : 1111.03,
+    "migrationMessages" : [ ]
+  }, {
+    "onReleaseVersion" : "11.11",
+    "migrationVersion" : 1111.04,
+    "migrationMessages" : [ ]
+  }, {
+    "onReleaseVersion" : "11.11",
+    "migrationVersion" : 1111.05,
+    "migrationMessages" : [ ]
+  }, {
+    "onReleaseVersion" : "11.11",
+    "migrationVersion" : 1111.06,
+    "migrationMessages" : [ ]
+  }, {
+    "onReleaseVersion" : "11.11",
+    "migrationVersion" : 1111.07,
+    "migrationMessages" : [ ]
+  } ]
+}

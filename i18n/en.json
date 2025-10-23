@@ -1,0 +1,18 @@
+{
+  "messages" : {
+    "Location_Step_Title" : "Location",
+    "Sim_Swap_Step_Title" : "Sim Swap",
+    "Number_Validation_Step_Title" : "Number Validation"
+  },
+  "formats" : {
+    "date" : "MMM d, y",
+    "time" : "h:mm:ss a",
+    "currency" : "USD"
+  },
+  "files" : {
+    "angular" : "en",
+    "fullCalendar" : null,
+    "moment" : null
+  },
+  "prefabMessages" : { }
+}

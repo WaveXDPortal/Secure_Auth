@@ -1,0 +1,263 @@
+{
+  "JSCallServiceVariable" : {
+    "_id" : "wm-JSCallServiceVariable-wm.ServiceVariable-1739522298912",
+    "name" : "JSCallServiceVariable",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "com.secureauth.utils.StandardResponse",
+    "service" : "CallService",
+    "operation" : "callVerifyMethod",
+    "operationId" : "CallController_callVerifyMethod",
+    "operationType" : "post",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "onSuccess" : "JSCallServiceVariableonSuccess(variable, data, options)",
+    "onError" : "JSCallServiceVariableonError(variable, data, options)",
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "Call"
+  },
+  "stvlocationVerifyVariable" : {
+    "_id" : "wm-stvlocationVerifyVariable-wm.Variable-1739894487848",
+    "name" : "stvlocationVerifyVariable",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ {
+      "target" : "request_body",
+      "value" : "bind:devicedetails"
+    } ],
+    "dataSet" : {
+      "api_uri" : "https://nac-mountebankapi.wavemakeronline.com/verify",
+      "api_host" : "location-verification.nokia.rapidapi.com",
+      "api_key" : "bd84b964f1msh0c3b3fb3e781d61p1c78c2jsnb366b5862354",
+      "api_header" : {
+        "Content-Type" : "application/json",
+        "X-RapidAPI-Key" : "bd84b964f1msh0c3b3fb3e781d61p1c78c2jsnb366b5862354",
+        "X-RapidAPI-Host" : "location-verification.nokia.rapidapi.com"
+      },
+      "request_body" : {
+        "device" : {
+          "phoneNumber" : "1234567890",
+          "networkAccessIdentifier" : "",
+          "ipv4Address" : {
+            "publicAddress" : "",
+            "privateAddress" : "",
+            "publicPort" : ""
+          },
+          "ipv6Address" : ""
+        },
+        "area" : {
+          "areaType" : "CIRCLE",
+          "center" : {
+            "latitude" : 0,
+            "longitude" : 0
+          },
+          "radius" : ""
+        },
+        "maxAge" : ""
+      },
+      "request_params" : { },
+      "method_type" : "POST",
+      "step_title" : "Location_Step_Title",
+      "step_Icon_Progress" : "wi wi-location-on",
+      "step_Icon_done" : "wi wi-location-on",
+      "step_name" : "Device Location Verification",
+      "errormessage" : "Verification failed: The Device is not in intended location"
+    },
+    "type" : "entry",
+    "isList" : false,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "stvNumberVerifyVariable" : {
+    "_id" : "wm-stvNumberVerifyVariable-wm.Variable-1739892190903",
+    "name" : "stvNumberVerifyVariable",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ {
+      "target" : "request_body.phoneNumber",
+      "value" : "bind:phonenumber"
+    } ],
+    "dataSet" : {
+      "api_uri" : "https://nac-mountebankapi.wavemakeronline.com/verify",
+      "api_host" : "number-verification.nokia.rapidapi.com",
+      "api_key" : "bd84b964f1msh0c3b3fb3e781d61p1c78c2jsnb366b5862354",
+      "api_header" : {
+        "authorization" : "test",
+        "X-Correlator" : "test",
+        "Content-Type" : "application/json",
+        "X-RapidAPI-Key" : "bd84b964f1msh0c3b3fb3e781d61p1c78c2jsnb366b5862354",
+        "X-RapidAPI-Host" : "number-verification.nokia.rapidapi.com"
+      },
+      "request_body" : {
+        "phoneNumber" : "1234567890",
+        "hashedPhoneNumber" : "U2FsdGVkX1+4lld4A/RIOU55UHsAU6IGZSBbPmH6Gig="
+      },
+      "request_params" : { },
+      "method_type" : "POST",
+      "step_title" : "Number_Validation_Step_Title",
+      "step_Icon_Progress" : "wi wi-phone-iphone",
+      "step_Icon_done" : "wi wi-phone-iphone",
+      "step_name" : "Number Verification",
+      "errormessage" : "Verification failed: Phone number for this device could not be verified"
+    },
+    "type" : "entry",
+    "isList" : false,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "stvSimSwapVariable" : {
+    "_id" : "wm-stvSimSwapVariable-wm.Variable-1739894377021",
+    "name" : "stvSimSwapVariable",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ {
+      "target" : "request_body.phoneNumber",
+      "value" : "bind:phonenumber"
+    }, {
+      "target" : "request_body.maxAge",
+      "value" : "bind:240"
+    } ],
+    "dataSet" : {
+      "api_uri" : "https://nac-mountebankapi.wavemakeronline.com/sim-swap/sim-swap/v0/check",
+      "api_host" : "sim-swap.nokia.rapidapi.com",
+      "api_key" : "bd84b964f1msh0c3b3fb3e781d61p1c78c2jsnb366b5862354",
+      "api_header" : {
+        "Content-Type" : "application/json",
+        "X-RapidAPI-Key" : "bd84b964f1msh0c3b3fb3e781d61p1c78c2jsnb366b5862354",
+        "X-RapidAPI-Host" : "sim-swap.nokia.rapidapi.com"
+      },
+      "request_body" : {
+        "phoneNumber" : "1234567890",
+        "maxAge" : "240"
+      },
+      "request_params" : { },
+      "method_type" : "POST",
+      "step_title" : "Sim_Swap_Step_Title",
+      "step_Icon_Progress" : "wi wi-sim-card",
+      "step_Icon_done" : "wi wi-sim-card",
+      "step_name" : "SIM SWAP Verification",
+      "errormessage" : "Verification failed: SIM Swap was performed recently for this phone number"
+    },
+    "type" : "entry",
+    "isList" : false,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "stvStepDetails" : {
+    "_id" : "wm-stvStepDetails-wm.Variable-1739521332447",
+    "name" : "stvStepDetails",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "api_uri" : "https://nac-mountebankapi.wavemakeronline.com/verify",
+      "api_host" : "number-verification.nokia.rapidapi.com",
+      "api_key" : "bd84b964f1msh0c3b3fb3e781d61p1c78c2jsnb366b5862354",
+      "api_header" : {
+        "authorization" : "test",
+        "X-Correlator" : "test",
+        "Content-Type" : "application/json",
+        "X-RapidAPI-Key" : "bd84b964f1msh0c3b3fb3e781d61p1c78c2jsnb366b5862354",
+        "X-RapidAPI-Host" : "number-verification.nokia.rapidapi.com"
+      },
+      "request_body" : {
+        "phoneNumber" : "1234567890",
+        "hashedPhoneNumber" : "U2FsdGVkX1+4lld4A/RIOU55UHsAU6IGZSBbPmH6Gig="
+      },
+      "request_params" : { },
+      "method_type" : "POST",
+      "step_title" : "Number_Validation_Step_Title",
+      "step_Icon_Progress" : "wi wi-phone-iphone",
+      "step_Icon_done" : "wi wi-phone-iphone",
+      "step_name" : "Number Verification",
+      "errormessage" : "Verification failed: Phone number for this device could not be verified"
+    }, {
+      "api_uri" : "https://nac-mountebankapi.wavemakeronline.com/sim-swap/sim-swap/v0/check",
+      "api_host" : "sim-swap.nokia.rapidapi.com",
+      "api_key" : "bd84b964f1msh0c3b3fb3e781d61p1c78c2jsnb366b5862354",
+      "api_header" : {
+        "Content-Type" : "application/json",
+        "X-RapidAPI-Key" : "bd84b964f1msh0c3b3fb3e781d61p1c78c2jsnb366b5862354",
+        "X-RapidAPI-Host" : "sim-swap.nokia.rapidapi.com"
+      },
+      "request_body" : {
+        "phoneNumber" : "1234567890",
+        "maxAge" : 240
+      },
+      "request_params" : { },
+      "method_type" : "POST",
+      "step_title" : "Sim_Swap_Step_Title",
+      "step_Icon_Progress" : "wi wi-sim-card",
+      "step_Icon_done" : "wi wi-sim-card",
+      "step_name" : "SIM SWAP Verification",
+      "errormessage" : "Verification failed: SIM Swap was performed recently for this phone number"
+    }, {
+      "api_uri" : "https://nac-mountebankapi.wavemakeronline.com/verify",
+      "api_host" : "location-verification.nokia.rapidapi.com",
+      "api_key" : "bd84b964f1msh0c3b3fb3e781d61p1c78c2jsnb366b5862354",
+      "api_header" : {
+        "Content-Type" : "application/json",
+        "X-RapidAPI-Key" : "bd84b964f1msh0c3b3fb3e781d61p1c78c2jsnb366b5862354",
+        "X-RapidAPI-Host" : "location-verification.nokia.rapidapi.com"
+      },
+      "request_body" : {
+        "device" : {
+          "phoneNumber" : "1234567890",
+          "networkAccessIdentifier" : "",
+          "ipv4Address" : {
+            "publicAddress" : "",
+            "privateAddress" : "",
+            "publicPort" : ""
+          },
+          "ipv6Address" : ""
+        },
+        "area" : {
+          "areaType" : {
+            "0" : "C",
+            "1" : "I",
+            "2" : "R",
+            "3" : "C",
+            "4" : "L",
+            "5" : "E"
+          },
+          "center" : {
+            "latitude" : 0,
+            "longitude" : 0
+          },
+          "radius" : ""
+        },
+        "maxAge" : ""
+      },
+      "request_params" : { },
+      "method_type" : "POST",
+      "step_title" : "Location_Step_Title",
+      "step_Icon_Progress" : "wi wi-location-on",
+      "step_Icon_done" : "wi wi-location-on",
+      "step_name" : "Device Location Verification",
+      "errormessage" : "Verification failed: The Device is not in intended location"
+    } ],
+    "type" : "entry",
+    "isList" : true,
+    "twoWayBinding" : false,
+    "saveInPhonegap" : false
+  },
+  "supportedLocale" : {
+    "_id" : "wm-wm.Variable1402640443182",
+    "name" : "supportedLocale",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataSet" : {
+      "en" : "English"
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  }
+}

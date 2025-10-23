@@ -1,0 +1,8 @@
+{
+  "id" : "CallService",
+  "type" : "JavaService",
+  "packageNames" : [ "com.wavemaker.secureauth.callservice" ],
+  "serviceClassNames" : [ "com.wavemaker.secureauth.callservice.CallService" ],
+  "title" : "CallService",
+  "mockEnabled" : false
+}

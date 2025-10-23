@@ -1,0 +1,250 @@
+{
+  "displayName" : "Secure Auth",
+  "group" : "",
+  "iconUrl" : "/resources/images/imagelists/SecureAuth__2___2_.svg",
+  "resources" : {
+    "styles" : [ "/pages/Main/Main.css" ],
+    "scripts" : [ ]
+  },
+  "properties" : {
+    "stepdetails" : {
+      "type" : "object",
+      "displayName" : "Stepdetails",
+      "description" : "Verification Step Details\n",
+      "bindable" : "in-bound",
+      "isList" : true,
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "numberverification" : {
+      "type" : "boolean",
+      "displayName" : "Numberverification",
+      "description" : "Numberverification",
+      "bindable" : "in-bound",
+      "value" : true,
+      "widget" : "checkbox",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "locationverification" : {
+      "type" : "boolean",
+      "displayName" : "Locationverification",
+      "description" : "Locationverification",
+      "bindable" : "in-bound",
+      "value" : true,
+      "widget" : "checkbox",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "simswapverification" : {
+      "type" : "boolean",
+      "displayName" : "Simswapverification",
+      "description" : "Simswapverification",
+      "bindable" : "in-bound",
+      "isList" : false,
+      "value" : true,
+      "widget" : "checkbox",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "phonenumber" : {
+      "type" : "string",
+      "displayName" : "Phonenumber",
+      "description" : "Phone Number\n",
+      "bindable" : "in-bound",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "numbervalidationsteptitle" : {
+      "type" : "string",
+      "displayName" : "Number Validation Step Title",
+      "description" : "This Property is used for Number Validation Step Title",
+      "bindable" : "in-bound",
+      "value" : "Number Validation",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "numbervalidationstepiconprogress" : {
+      "type" : "string",
+      "displayName" : "Number Validation Step Icon Progress",
+      "description" : "This property is used for Number Validation Step Icon In-Progress",
+      "bindable" : "in-bound",
+      "value" : "wi wi-phone-iphone",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "numbervalidationstepicondone" : {
+      "type" : "string",
+      "displayName" : "Number Validation Step Icon Done",
+      "description" : "This Property is used for Number Validation Step Icon Done",
+      "bindable" : "in-bound",
+      "value" : "wi wi-phone-iphone",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "numbervalidationsteperrormessage" : {
+      "type" : "string",
+      "displayName" : "Number Validation Step Error Message",
+      "description" : "This Property is used for Number Validation Step Error Message.",
+      "bindable" : "in-bound",
+      "value" : "Verification failed: Phone number for this device could not be verified",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "simswapsteptitle" : {
+      "type" : "string",
+      "displayName" : "Sim Swap Step Title",
+      "description" : "This Property is used for Sim Swap Step Title",
+      "bindable" : "in-bound",
+      "value" : "SIM Swap",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "simswapstepiconprogress" : {
+      "type" : "string",
+      "displayName" : "Sim Swap Step Icon In-Progress",
+      "description" : "This Property is used for Sim Swap Step Icon In-Progress.",
+      "bindable" : "in-bound",
+      "value" : "wi wi-sim-card",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "simswapstepicondone" : {
+      "type" : "string",
+      "displayName" : "Sim Swap Step Icon Done",
+      "description" : "This Property is used for Sim Swap Step Icon Done.",
+      "bindable" : "in-bound",
+      "value" : "wi wi-sim-card",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "simswapsteperrormessage" : {
+      "type" : "string",
+      "displayName" : "Sim Swap Step Error Message",
+      "description" : "This Property is used for Sim Swap Step Error Message",
+      "bindable" : "in-bound",
+      "value" : "Verification failed: SIM Swap was performed recently for this phone number",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "locationsteptitle" : {
+      "type" : "string",
+      "displayName" : "Location Step Title",
+      "description" : "This Property is used for Location Step Title.",
+      "bindable" : "in-bound",
+      "value" : "Location",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "locationstepiconprogress" : {
+      "type" : "string",
+      "displayName" : "Location Step Icon In-Progress",
+      "description" : "This Property is used for Location Step Icon In-Progress.",
+      "bindable" : "in-bound",
+      "value" : "wi wi-location-on",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "locationstepicondone" : {
+      "type" : "string",
+      "displayName" : "Location Step Icon Done",
+      "description" : "This Property is used for Location Step Icon Done.",
+      "bindable" : "in-bound",
+      "value" : "wi wi-location-on",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    },
+    "locationsteperrormessage" : {
+      "type" : "string",
+      "displayName" : "Location Step Error Message",
+      "description" : "This property is used for Location Step Error Message.",
+      "bindable" : "in-bound",
+      "value" : "Verification failed: The Device is not in intended location",
+      "widget" : "string",
+      "show" : true,
+      "showAt" : "",
+      "disabled" : false
+    }
+  },
+  "events" : {
+    "onError" : {
+      "description" : "Callback action trigger once the api fails",
+      "eventData" : "",
+      "displayName" : "Onerror"
+    },
+    "onSuccess" : {
+      "description" : "callback once the prefab is success",
+      "eventData" : "",
+      "displayName" : "Success"
+    }
+  },
+  "methods" : {
+    "seti18n" : {
+      "description" : "this method is used to set the i18n value",
+      "parameters" : [ {
+        "name" : "labelNameValuePair",
+        "type" : "any",
+        "description" : ""
+      } ],
+      "returnType" : "void",
+      "example" : ""
+    },
+    "setnumberstepproperties" : {
+      "description" : "Set the Number Step Values",
+      "parameters" : [ ],
+      "returnType" : "void",
+      "example" : ""
+    },
+    "setsimswapstepproperties" : {
+      "description" : "Set Sim Swap Step Values",
+      "parameters" : [ ],
+      "returnType" : "void",
+      "example" : ""
+    },
+    "setlocationstepproperties" : {
+      "description" : "Set Location Step Properties",
+      "parameters" : [ ],
+      "returnType" : "void",
+      "example" : ""
+    },
+    "singleapicall" : {
+      "description" : "Single Api Call",
+      "parameters" : [ {
+        "name" : "arrayindex",
+        "type" : "any",
+        "description" : ""
+      } ],
+      "returnType" : "void",
+      "example" : ""
+    }
+  }
+}
